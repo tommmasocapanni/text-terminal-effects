@@ -30,7 +30,7 @@ const init = () => {
     observer.observe(element);
   };
 
-  document.querySelectorAll('.list__item').forEach((item, itemIndex) => {
+  document.querySelectorAll('.hover-effect').forEach((item, itemIndex) => {
     const cols = Array.from(item.querySelectorAll('.hover-effect'));
     const animators = cols.map(col => new TextAnimator(col));
 
@@ -46,7 +46,7 @@ const init = () => {
     });
   });
 
-  document.querySelectorAll('a.hover-effect').forEach((item, index) => {
+  document.querySelectorAll('.hover-effect').forEach((item, index) => {
     const animator = new TextAnimator(item);
 
     // Attiva animazione su hover
